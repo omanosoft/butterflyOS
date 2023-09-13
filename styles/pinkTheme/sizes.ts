@@ -4,7 +4,7 @@ const sizes = {
   },
   clock: {
     fontSize: "12px",
-    padding: 5,
+    width: "76px",
   },
   contextMenu: {
     subMenuOffset: 3,
@@ -12,14 +12,13 @@ const sizes = {
   fileEntry: {
     fontSize: "12px",
     iconSize: "48px",
-    maxIconTextDisplayWidth: 72,
+    maxIconTextDisplayWidth: 73,
     maxListTextDisplayWidth: 102,
     renamePadding: 5,
     renameWidth: 75,
   },
   fileExplorer: {
-    navBarHeight: "38px",
-    navInputHeight: 24,
+    navBarHeight: "43px",
     statusBarHeight: "23px",
   },
   fileManager: {
@@ -29,57 +28,45 @@ const sizes = {
     padding: "5px 0",
     rowGap: "28px",
   },
-  search: {
-    headerHeight: 52,
-    inputHeight: 40,
-    maxHeight: 415,
-    size: 600,
+  startButton: {
+    iconSize: "15px",
+    width: "36px",
   },
   startMenu: {
     maxHeight: 390,
     sideBar: {
-      buttonHeight: 48,
-      expandedWidth: "228px",
+      expandedWidth: "220px",
+      height: "48px",
       iconSize: "16px",
       width: 48,
     },
     size: 320,
   },
   taskbar: {
-    ai: {
-      buttonWidth: "40px",
-      chatWidth: 415,
-    },
     blur: "5px",
-    button: {
-      iconSize: "15px",
-      width: 36,
-    },
     entry: {
       borderSize: "2px",
       fontSize: "12px",
       iconSize: "16px",
       maxWidth: "160px",
-      peekControlsHeight: 36,
       peekImage: {
         height: 82,
         margin: 8,
       },
     },
-    panelBlur: "12px",
   },
   titleBar: {
     buttonIconWidth: "10px",
     buttonWidth: "45px",
     fontSize: "12px",
     height: 30,
-    iconMarginRight: "4px",
+    iconMarginRight: "5px",
     iconSize: "16px",
   },
   window: {
     cascadeOffset: 26,
     outline: "1px",
-    borderRadius: "0px",
+    borderRadius: "15px",
   },
 };
 

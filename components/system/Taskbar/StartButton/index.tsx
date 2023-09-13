@@ -2,6 +2,8 @@ import { useCallback, useRef, useState } from "react";
 import StartButtonIcon from "components/system/Taskbar/StartButton/StartButtonIcon";
 import StyledTaskbarButton from "components/system/Taskbar/StyledTaskbarButton";
 import { START_BUTTON_TITLE } from "components/system/Taskbar/functions";
+import PinkStartButtonIcon from "components/system/Taskbar/StartButton/PinkStartButtonIcon";
+import StyledStartButton from "components/system/Taskbar/StartButton/StyledStartButton";
 import useTaskbarContextMenu from "components/system/Taskbar/useTaskbarContextMenu";
 import { DIV_BUTTON_PROPS } from "utils/constants";
 import {
@@ -96,8 +98,8 @@ const StartButton: FC<StartButtonProps> = ({
       {...label(START_BUTTON_TITLE)}
       {...useTaskbarContextMenu(true)}
     >
-      <StartButtonIcon />
-    </StyledTaskbarButton>
+      <PinkStartButtonIcon />
+    </StyledStartButton>
   );
 };
 

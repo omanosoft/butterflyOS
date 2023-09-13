@@ -16,9 +16,9 @@ const StyledSearch = styled.div`
   }
 
   input {
-    appearance: none;
-    background-color: rgb(25, 25, 25);
-    color: #fff;
+    background-color: ${({ theme }) =>
+      theme.colors.fileExplorer.inputFieldsBackground};
+    color: ${({ theme }) => theme.colors.fileExplorer.inputFieldsText};
     font-family: ${({ theme }) => theme.formats.systemFont};
     font-size: 12px;
     font-weight: 400;

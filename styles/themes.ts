@@ -1,7 +1,9 @@
 import { type DefaultTheme } from "styled-components";
 import defaultTheme from "styles/defaultTheme";
+import pinkTheme from "styles/pinkTheme";
+import turquoiseTheme from "styles/turquoiseTheme";
 
-const themes = { defaultTheme };
+const themes = { defaultTheme, pinkTheme, turquoiseTheme };
 
 export type ThemeName = keyof typeof themes;
 
