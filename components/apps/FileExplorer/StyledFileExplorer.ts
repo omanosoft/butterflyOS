@@ -10,6 +10,8 @@ const StyledFileExplorer = styled.div`
       `calc(100% - ${theme.sizes.fileExplorer.navBarHeight} - ${theme.sizes.fileExplorer.statusBarHeight})`};
     padding-left: 5px;
     padding-right: 5px;
+    background-color: ${({ theme }) =>
+      `${theme.colors.fileExplorer.background}`};
   }
 
   ${StyledLoading} {

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const StyledNavigation = styled.nav`
-  background-color: rgb(25, 25, 25);
+  background-color: ${({ theme }) =>
+    theme.colors.fileExplorer.navigationBackground};
   display: flex;
   height: ${({ theme }) => theme.sizes.fileExplorer.navBarHeight};
 
@@ -11,7 +12,7 @@ const StyledNavigation = styled.nav`
     width: 16px;
 
     svg {
-      color: #fff;
+      color: ${({ theme }) => theme.colors.fileExplorer.navigationIcons};
       fill: currentColor;
       height: 16px;
       width: 16px;

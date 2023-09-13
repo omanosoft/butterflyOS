@@ -1,4 +1,5 @@
 import StartButtonIcon from "components/system/Taskbar/StartButton/StartButtonIcon";
+import PinkStartButtonIcon from "components/system/Taskbar/StartButton/PinkStartButtonIcon";
 import StyledStartButton from "components/system/Taskbar/StartButton/StyledStartButton";
 import useTaskbarContextMenu from "components/system/Taskbar/useTaskbarContextMenu";
 import { useCallback, useRef, useState } from "react";
@@ -86,7 +87,7 @@ const StartButton: FC<StartButtonProps> = ({
       {...label("Start")}
       {...useTaskbarContextMenu(true)}
     >
-      <StartButtonIcon />
+      <PinkStartButtonIcon />
     </StyledStartButton>
   );
 };

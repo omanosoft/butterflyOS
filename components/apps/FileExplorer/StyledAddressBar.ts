@@ -4,7 +4,7 @@ const StyledAddressBar = styled.div`
   background-position: 2px 5px;
   background-repeat: no-repeat;
   background-size: 16px;
-  border: 1px solid rgb(83, 83, 83);
+  border: 1px solid ${({ theme }) => theme.colors.titleBar.background};
   display: flex;
   height: 30px;
   margin: 6px 12px 6px 5px;
@@ -13,9 +13,10 @@ const StyledAddressBar = styled.div`
   width: 100%;
 
   input {
-    background-color: rgb(25, 25, 25);
+    background-color: ${({ theme }) =>
+      theme.colors.fileExplorer.inputFieldsBackground};
     border-right: 1px solid rgb(21, 21, 21);
-    color: #fff;
+    color: ${({ theme }) => theme.colors.fileExplorer.inputFieldsText};
     font-family: ${({ theme }) => theme.formats.systemFont};
     font-size: 12px;
     font-weight: 400;
@@ -33,7 +34,8 @@ const StyledAddressBar = styled.div`
   }
 
   .refresh {
-    background-color: rgb(25, 25, 25);
+    background-color: ${({ theme }) =>
+      theme.colors.fileExplorer.navigationBackground};
     height: 28px;
     margin: 0;
     position: absolute;

@@ -4,7 +4,7 @@ const sizes = {
   },
   clock: {
     fontSize: "12px",
-    padding: 5,
+    width: "76px",
   },
   contextMenu: {
     subMenuOffset: 3,
@@ -66,7 +66,7 @@ const sizes = {
   window: {
     cascadeOffset: 26,
     outline: "1px",
-    borderRadius: "0px",
+    borderRadius: "15px",
   },
 };
 

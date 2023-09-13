@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 const buttonSize = "48px";
-const paddingSize = "32px";
+const paddingSize = "10px";
 
 type StyledPhotosProps = {
   $showImage: boolean;
 };
 
 const StyledPhotos = styled.div<StyledPhotosProps>`
-  background-color: #222;
+  background-color: ${({ theme }) =>
+    theme.colors.fileExplorer.navigationBackground};
   display: flex;
   height: 100%;
   padding-bottom: ${paddingSize};
@@ -16,7 +17,7 @@ const StyledPhotos = styled.div<StyledPhotosProps>`
   position: relative;
 
   svg {
-    fill: #fff;
+    fill: ${({ theme }) => theme.colors.fileExplorer.navigationIcons};
   }
 
   figure {

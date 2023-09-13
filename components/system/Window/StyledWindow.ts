@@ -22,6 +22,7 @@ const StyledWindow = styled(motion.section)<StyledWindowProps>`
         : theme.colors.window.outlineInactive
     }`};
   overflow: hidden;
+  border-radius: ${({ theme }) => `${theme.sizes.window.borderRadius}`};
   position: absolute;
   width: 100%;
 

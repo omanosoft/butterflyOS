@@ -20,13 +20,14 @@ export const DEFAULT_ASCENDING = true;
 
 export const DEFAULT_CLOCK_SOURCE: ClockSource = "local";
 
-export const DEFAULT_THEME: ThemeName = "defaultTheme";
+export const DEFAULT_THEME: ThemeName = "pinkTheme"; //"turquoiseTheme";
 
 export const DEFAULT_AI_API = "HuggingFace:"; // Engine:Key
 
 export const DEFAULT_NON_WEBGPU_ENGINE = "HuggingFace";
 
-export const DEFAULT_WALLPAPER = "VANTA";
+export const DEFAULT_WALLPAPER =
+  "/Users/Public/Pictures/watering-pink-flowers.jpg";
 
 export const DEFAULT_WALLPAPER_FIT: WallpaperFit = "fill";
 
@@ -181,7 +182,7 @@ export const SHORTCUT_APPEND = " - Shortcut";
 
 export const SHORTCUT_EXTENSION = ".url";
 
-export const SYSTEM_FILES = new Set(["desktop.ini"]);
+export const SYSTEM_FILES = new Set(["desktop.ini", ".DS_Store"]);
 
 export const SYSTEM_PATHS = new Set(["/.deletedFiles.log"]);
 
@@ -307,7 +308,7 @@ export const DEFAULT_SCROLLBAR_WIDTH = 17;
 export const TASKBAR_HEIGHT = 30;
 
 export const PACKAGE_DATA = {
-  alias: "daedalOS",
+  alias: "Barbie OS",
   author: {
     email: "dustinbrett@gmail.com",
     name: "Dustin Brett",

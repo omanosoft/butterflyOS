@@ -44,6 +44,13 @@ const colors = {
     text: "rgb(255, 255, 255)",
     textInactive: "rgb(170, 170, 170)",
   },
+  fileExplorer: {
+    background: "rgb(25, 25, 25)",
+    navigationBackground: "rgb(43, 43, 43)",
+    navigationIcons: "rgba(255, 248, 245, 1)",
+    inputFieldsBackground: "rgb(25, 25, 25)",
+    inputFieldsText: "rgb(255, 255, 255)",
+  },
   window: {
     background: "#808080",
     outline: "hsla(0, 0%, 25%, 75%)",
