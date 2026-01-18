@@ -4,7 +4,7 @@ const StyledAddressBar = styled.div`
   background-position: 2px 5px;
   background-repeat: no-repeat;
   background-size: 16px;
-  border: 1px solid rgb(83 83 83);
+  border: 1px solid ${({ theme }) => theme.colors.window.outline};
   display: flex;
   height: ${({ theme }) => theme.sizes.fileExplorer.navInputHeight}px;
   margin: 6px 12px 5px 5px;
@@ -14,9 +14,9 @@ const StyledAddressBar = styled.div`
   width: 100%;
 
   input {
-    background-color: rgb(25 25 25);
-    border-right: 1px solid rgb(21 21 21);
-    color: #fff;
+    background-color: ${({ theme }) => theme.colors.window.background};
+    border-right: 1px solid ${({ theme }) => theme.colors.window.outline};
+    color: ${({ theme }) => theme.colors.text};
     font-family: ${({ theme }) => theme.formats.systemFont};
     font-size: 12px;
     font-weight: 400;
@@ -39,7 +39,7 @@ const StyledAddressBar = styled.div`
   }
 
   .action {
-    background-color: rgb(25 25 25);
+    background-color: ${({ theme }) => theme.colors.window.background};
     display: flex;
     height: ${({ theme }) => theme.sizes.fileExplorer.navInputHeight - 2}px;
     margin: 0;
@@ -51,18 +51,19 @@ const StyledAddressBar = styled.div`
     width: 24px;
 
     &:hover {
-      background-color: rgb(27 41 49);
-      border: 1px solid rgb(34 114 153);
+      background-color: ${({ theme }) => theme.colors.taskbar.hover};
+      border: 1px solid ${({ theme }) => theme.colors.highlight};
     }
 
     &:active {
-      background-color: rgb(28 57 71);
-      border: 1px solid rgb(38 160 218);
+      background-color: ${({ theme }) => theme.colors.taskbar.active};
+      border: 1px solid ${({ theme }) => theme.colors.highlight};
     }
 
     svg {
-      color: rgb(128 128 128);
-      stroke: rgb(128 128 128);
+      color: ${({ theme }) => theme.colors.text};
+      opacity: 80%;
+      stroke: ${({ theme }) => theme.colors.text};
 
       &.refresh {
         position: relative;

@@ -4,8 +4,8 @@ import ScrollBars from "styles/common/ScrollBars";
 import { TASKBAR_HEIGHT } from "utils/constants";
 
 const StyledFileManager = styled.ol<StyledFileManagerProps>`
+  background-color: ${({ theme }) => theme.colors.window.background};
   ${({ $scrollable }) => ($scrollable ? ScrollBars() : undefined)};
-
   contain: strict;
   display: grid;
   gap: ${({ theme }) =>
@@ -23,6 +23,7 @@ const StyledFileManager = styled.ol<StyledFileManagerProps>`
   pointer-events: ${({ $selecting }) => ($selecting ? "auto" : undefined)};
 
   main > & {
+    background-color: transparent;
     grid-auto-flow: column;
     height: calc(100% - ${TASKBAR_HEIGHT}px);
     overflow: visible;

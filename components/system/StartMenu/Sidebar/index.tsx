@@ -8,6 +8,7 @@ import {
   Documents,
   Pictures,
   Power,
+  Settings,
   SideMenu,
   Videos,
 } from "components/system/StartMenu/Sidebar/SidebarIcons";
@@ -73,6 +74,12 @@ const Sidebar: FC<SidebarProps> = ({ height }) => {
   const bottomButtons = useMemo(
     () =>
       [
+        {
+          action: () => open("Settings"),
+          icon: <Settings />,
+          name: "Settings",
+          ...(collapsed && { tooltip: "Settings" }),
+        },
         buttonAreaCount > 3
           ? {
               action: () =>

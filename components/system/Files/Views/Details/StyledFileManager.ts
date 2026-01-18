@@ -4,8 +4,8 @@ import { type StyledFileManagerProps } from "components/system/Files/Views";
 import ScrollBars from "styles/common/ScrollBars";
 
 const StyledFileManager = styled.ol<StyledFileManagerProps>`
+  background-color: ${({ theme }) => theme.colors.window.background};
   ${({ $scrollable }) => ($scrollable ? ScrollBars() : undefined)};
-
   contain: strict;
   overflow: ${({ $isEmptyFolder, $scrollable }) =>
     !$isEmptyFolder && $scrollable ? undefined : "hidden"};

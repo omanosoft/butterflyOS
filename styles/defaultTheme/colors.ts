@@ -57,7 +57,7 @@ const colors = {
     textInactive: "rgb(170, 170, 170)",
   },
   window: {
-    background: "#808080",
+    background: "#202020",
     outline: "hsla(0, 0%, 25%, 75%)",
     outlineInactive: "hsla(0, 0%, 30%, 100%)",
     shadow: "0 0 14px 0 rgba(0, 0, 0, 50%)",

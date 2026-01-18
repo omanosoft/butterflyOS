@@ -274,6 +274,16 @@ const directory: Processes = {
     singleton: true,
     title: "Screen Saver",
   },
+  Settings: {
+    Component: dynamic(() => import("components/apps/Settings")),
+    backgroundColor: "rgb(240, 240, 240)",
+    defaultSize: {
+      height: 500,
+      width: 600,
+    },
+    icon: "/System/Icons/settings.webp",
+    title: "Settings",
+  },
   SpaceCadet: {
     Component: dynamic(() => import("components/apps/SpaceCadet")),
     backgroundColor: "#000",

@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 const StyledNavigation = styled.nav`
-  background-color: rgb(25 25 25);
+  background-color: ${({ theme }) => theme.colors.taskbar.background};
   display: flex;
   height: ${({ theme }) => theme.sizes.fileExplorer.navBarHeight};
 
   svg {
-    color: #fff;
+    color: ${({ theme }) => theme.colors.text};
     fill: currentColor;
     height: 16px;
     transition: color 0.35s ease;
@@ -41,20 +41,22 @@ const StyledNavigation = styled.nav`
 
     &:active {
       svg {
-        color: rgb(54 116 178);
+        color: ${({ theme }) => theme.colors.highlight};
         transition: none;
       }
     }
 
     &:hover {
       svg {
-        color: rgb(50 152 254);
+        color: ${({ theme }) => theme.colors.highlight};
+        opacity: 90%;
       }
     }
 
     &:disabled {
       svg {
-        color: rgb(140 140 140);
+        color: ${({ theme }) => theme.colors.text};
+        opacity: 50%;
       }
     }
   }

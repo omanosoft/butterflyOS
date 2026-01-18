@@ -14,8 +14,8 @@ const StyledSidebar = styled.nav`
   z-index: 1;
 
   &:hover:not(&.collapsed) {
-    background-color: hsl(0 0% 10% / 95%);
-    box-shadow: 8px 0 5px -5px hsl(0 0% 10% / 50%);
+    background-color: ${({ theme }) => theme.colors.taskbar.background};
+    box-shadow: 8px 0 5px -5px rgb(0 0 0 / 50%);
     transition:
       all 300ms ease,
       backdrop-filter 1ms;
@@ -23,13 +23,13 @@ const StyledSidebar = styled.nav`
     width: ${({ theme }) => theme.sizes.startMenu.sideBar.expandedWidth};
 
     @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-      background-color: hsl(0 0% 10% / 75%);
+      background-color: ${({ theme }) => theme.colors.taskbar.background};
     }
 
     &::before {
       backdrop-filter: ${({ theme }) =>
         `blur(${theme.sizes.taskbar.panelBlur})`};
-      background-color: hsl(0 0% 10% / 50%);
+      background-color: ${({ theme }) => theme.colors.taskbar.background};
       content: "";
       height: 100%;
       margin-top: -4px;

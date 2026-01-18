@@ -23,6 +23,7 @@ const GlobalStyle = styled.createGlobalStyle`
   }
 
   body {
+    background-color: transparent;
     height: 100%;
     overflow: hidden;
     position: fixed;
@@ -30,7 +31,7 @@ const GlobalStyle = styled.createGlobalStyle`
   }
 
   html {
-    background-color: ${({ theme }) => theme.colors.background};
+    background-color: transparent;
     /* stylelint-disable value-no-vendor-prefix */
     height: -webkit-fill-available;
     height: -moz-available;
@@ -49,12 +50,18 @@ const GlobalStyle = styled.createGlobalStyle`
     }
 
     &::before {
-      background: var(--before-background);
+      background: var(
+        --before-background,
+        ${({ theme }) => theme.colors.background}
+      );
       opacity: var(--before-background-opacity, 0%);
     }
 
     &::after {
-      background: var(--after-background);
+      background: var(
+        --after-background,
+        ${({ theme }) => theme.colors.background}
+      );
       opacity: var(--after-background-opacity, 100%);
     }
   }

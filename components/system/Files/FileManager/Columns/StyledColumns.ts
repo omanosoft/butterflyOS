@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledColumns = styled.span`
-  background-color: rgb(32 32 32);
+  background-color: ${({ theme }) => theme.colors.taskbar.background};
   display: block;
   margin-bottom: 6px;
   margin-right: ${({ theme }) => theme.sizes.fileManager.detailsStartPadding}px;
@@ -15,7 +15,7 @@ const StyledColumns = styled.span`
     height: ${({ theme }) => theme.sizes.fileManager.columnHeight}px;
 
     li {
-      color: rgb(222 222 222);
+      color: ${({ theme }) => theme.colors.text};
       display: flex;
       font-size: 12px;
       padding-left: 6px;
@@ -23,8 +23,9 @@ const StyledColumns = styled.span`
       position: relative;
 
       > svg {
-        fill: rgb(149 149 149);
+        fill: ${({ theme }) => theme.colors.text};
         left: calc(50% - 4px);
+        opacity: 70%;
         position: absolute;
         top: 0;
         transition: none !important;
@@ -44,7 +45,7 @@ const StyledColumns = styled.span`
       }
 
       .resize {
-        border-left: 1px solid rgb(99 99 99);
+        border-left: 1px solid ${({ theme }) => theme.colors.window.outline};
         cursor: col-resize;
         height: ${({ theme }) => theme.sizes.fileManager.columnHeight}px;
         padding-left: ${({ theme }) =>
@@ -55,7 +56,7 @@ const StyledColumns = styled.span`
       }
 
       &:hover {
-        background-color: rgb(67 67 67);
+        background-color: ${({ theme }) => theme.colors.taskbar.hover};
 
         .resize {
           border-left: none;
@@ -63,7 +64,7 @@ const StyledColumns = styled.span`
       }
 
       &:active {
-        background-color: rgb(131 131 131);
+        background-color: ${({ theme }) => theme.colors.taskbar.active};
       }
 
       &:first-child {

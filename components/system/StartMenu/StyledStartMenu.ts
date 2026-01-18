@@ -86,8 +86,8 @@ const StyledStartMenu = styled(motion.nav)<StyledStartMenuProps>`
     }
 
     &::-webkit-scrollbar-thumb:vertical {
-      background-color: ${({ $showScrolling }) =>
-        $showScrolling ? undefined : "rgb(167, 167, 167)"};
+      background-color: ${({ $showScrolling, theme }) =>
+        $showScrolling ? theme.colors.taskbar.foreground : undefined};
     }
   }
 `;
